@@ -12,6 +12,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .picture {
@@ -56,8 +57,17 @@ html {
 
 .pravidla-button {
   background-color: #1fcca4;
+  border-bottom: 0.5px solid black;
+}
+
+.pravidla-button:hover {
+  background-color: #1cbb96;
 }
 
 .zacit-button {
   background-color: #0197f6;
+}
+
+.zacit-button:hover {
+  background-color: #0090e9;
 }
