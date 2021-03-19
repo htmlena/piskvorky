@@ -35,10 +35,29 @@ html {
 }
 
 .description {
-  font-family: Arial;
+  font-family: Arial, Arial, Helvetica, sans-serif;
   padding: 0 2rem 2rem;
   text-align: center;
   font-size: 1rem;
   line-height: 1.8rem;
   margin: 0;
+}
+
+.pravidla-button,
+.zacit-button {
+  border: none;
+  width: 364px;
+  min-height: 50px;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.pravidla-button {
+  background-color: #1fcca4;
+}
+
+.zacit-button {
+  background-color: #0197f6;
 }
