@@ -4,6 +4,8 @@ html {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   color: #ffffff;
+  min-width: 364px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -13,11 +15,14 @@ html {
 }
 
 .picture {
+  width: 364px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .header {
   font-family: 'Lobster', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .container-description {
@@ -25,15 +30,15 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35%;
   background-color: #283e50;
+  width: 364px;
 }
 
 .description {
-  font-family: sans-serif;
+  font-family: Arial;
   padding: 0 2rem 2rem;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   margin: 0;
 }
