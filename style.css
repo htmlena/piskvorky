@@ -6,13 +6,34 @@ html {
   color: #ffffff;
 }
 
-.main-container {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
 }
 
 .header {
-  font-family: Lobster, sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+}
+
+.container-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  background-color: #283e50;
 }
 
 .description {
   font-family: sans-serif;
+  padding: 0 2rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: 0;
 }
