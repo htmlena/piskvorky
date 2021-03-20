@@ -21,12 +21,6 @@ html {
   border-top-right-radius: 0.5rem;
 }
 
-.header {
-  font-family: 'Lobster', cursive;
-  font-size: 3rem;
-  font-weight: 500;
-}
-
 .container-description {
   display: flex;
   flex-direction: column;
@@ -34,6 +28,12 @@ html {
   align-items: center;
   background-color: #283e50;
   width: 364px;
+}
+
+.header {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .description {
@@ -57,13 +57,10 @@ html {
   justify-content: center;
   border: none;
   width: 364px;
-  height: 50px;
+  height: 3.1rem;
   color: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  outline: inherit;
   text-decoration: none;
-  text-align: center;
 }
 
 .pravidla-button {
