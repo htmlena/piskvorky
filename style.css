@@ -24,6 +24,7 @@ html {
 .header {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .container-description {
@@ -36,7 +37,7 @@ html {
 }
 
 .description {
-  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0 2rem 2rem;
   text-align: center;
   font-size: 1rem;
@@ -44,15 +45,25 @@ html {
   margin: 0;
 }
 
+.container-button {
+  display: flex;
+  flex-direction: column;
+}
+
 .pravidla-button,
 .zacit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   width: 364px;
-  min-height: 50px;
+  height: 50px;
   color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  cursor: pointer;
   outline: inherit;
+  text-decoration: none;
+  text-align: center;
 }
 
 .pravidla-button {
