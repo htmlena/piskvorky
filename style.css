@@ -26,7 +26,7 @@ body {
   max-width: 25rem;
 }
 
-.picture {
+.main-picture {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
@@ -108,7 +108,13 @@ ol {
 .circle-style,
 .cross-style {
   filter: invert(100);
+  width: 1em;
+  height: 1em;
 }
 
 .photo-instrcutions-container {
+}
+
+.photo-instruction {
+  width: 100%;
 }
