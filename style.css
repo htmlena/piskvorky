@@ -1,24 +1,35 @@
 html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
   min-height: 100vh;
   background-color: #615dad;
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   color: #ffffff;
-  min-width: 364px;
-  box-sizing: border-box;
+  min-width: 320px;
+  margin: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  margin: 7rem auto;
   align-items: center;
-  margin-top: 7rem;
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 25rem;
 }
 
 .picture {
-  width: 364px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  width: 100%;
 }
 
 .container-description {
@@ -27,7 +38,12 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #283e50;
-  width: 364px;
+  width: 100%;
+}
+
+.pravidla {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .header {
@@ -48,6 +64,7 @@ html {
 .container-button {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .pravidla-button,
@@ -56,7 +73,6 @@ html {
   align-items: center;
   justify-content: center;
   border: none;
-  width: 364px;
   height: 3.1rem;
   color: inherit;
   font-family: Arial, Helvetica, sans-serif;
