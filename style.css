@@ -102,7 +102,7 @@ body {
 }
 
 ol {
-  margin-top: 0;
+  margin: 0 1.1rem 1.5rem;
 }
 
 .circle-style,
@@ -113,10 +113,12 @@ ol {
 }
 
 .photo-instrcutions-container {
+  padding: 0 1.8rem;
 }
 
 .photo-figure {
-  margin: 1.8rem;
+  margin: 0;
+  margin-bottom: 1.8rem;
 }
 
 .photo-instruction {
@@ -130,4 +132,32 @@ ol {
   opacity: 0.8;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .rules-container {
+    max-width: 50rem;
+  }
+
+  .photo-instrcutions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-figure {
+    width: calc(50% - 1rem);
+  }
+
+  .photo-figcaption {
+    font-size: 1rem;
+  }
+
+  .list-style {
+    font-size: 1rem;
+  }
+
+  ol {
+    margin: 0 2rem 2rem;
+  }
 }
