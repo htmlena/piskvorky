@@ -109,8 +109,8 @@ ol {
 .circle-style,
 .cross-style {
   filter: invert(100);
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
   vertical-align: -0.1em;
 }
 
@@ -136,6 +136,10 @@ ol {
   margin-top: 0.5rem;
 }
 
+.hra-main-container {
+  max-width: 80vmin;
+}
+
 .hra-container {
   display: flex;
   flex-direction: column;
@@ -153,26 +157,46 @@ span {
 .hra-content-container {
   display: flex;
   justify-content: space-between;
-  width: 17rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hra-icons {
+  margin-left: 0.5rem;
+}
+
+.home-icon {
+}
+
+.restart-icon {
 }
 
 .hra-buttons {
   display: flex;
 }
 
+.game-buttons-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
 .game-buttons {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 17rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   outline: 1px solid black;
   background-image: linear-gradient(#c5b6d8, #f4d7e6);
   background-repeat: no-repeat;
 }
 
 .single-game-button {
-  height: 1.7rem;
-  width: 1.7rem;
+  width: calc(100% / 10);
   border: 1px solid black;
   background-color: transparent;
 }
