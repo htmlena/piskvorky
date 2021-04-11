@@ -16,7 +16,9 @@ body {
   margin: 0;
 }
 
-.container {
+/* Home page styles */
+
+.main-content-container {
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
@@ -32,18 +34,13 @@ body {
   width: 100%;
 }
 
-.container-description {
+.game-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #283e50;
   width: 100%;
-}
-
-.pravidla {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 .header {
@@ -67,14 +64,21 @@ body {
   font-size: 1.2rem;
 }
 
-.container-button {
+.main-buttons-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.pravidla-button,
-.zacit-button {
+/* Specific styles for Rules page */
+
+.rules {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rules-button,
+.start-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,20 +89,22 @@ body {
   text-decoration: none;
 }
 
-.pravidla-button {
+.rules-button {
   background-color: #1fcca4;
   border-bottom: 0.5px solid black;
 }
 
-.pravidla-button:hover {
+.rules-button:hover,
+.rules-button:focus {
   background-color: #1cbb96;
 }
 
-.zacit-button {
+.start-button {
   background-color: #0197f6;
 }
 
-.zacit-button:hover {
+.start-button:hover,
+.start-button:focus {
   background-color: #0090e9;
 }
 
@@ -136,11 +142,13 @@ ol {
   margin-top: 0.5rem;
 }
 
-.hra-main-container {
+/* Specific styles for Game page*/
+
+.game-main-container {
   max-width: 80vmin;
 }
 
-.hra-container {
+.game-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,25 +162,43 @@ span {
   font-size: 1.3rem;
 }
 
-.hra-content-container {
+.game-navigation-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.hra-icons {
+.game-navigation-buttons {
+  display: flex;
+}
+
+.navigation-icons {
   margin-left: 0.5rem;
 }
 
+.home-icon,
+.restart-icon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .home-icon {
+  background-color: #1fcca4;
+}
+
+.home-icon:hover,
+.home-icon:focus {
+  background-color: #1cbb96;
 }
 
 .restart-icon {
+  background-color: #0197f6;
 }
-
-.hra-buttons {
-  display: flex;
+.restart-icon:hover,
+.restart-icon:focus {
+  background-color: #0090e9;
 }
 
 .game-buttons-container {
@@ -200,6 +226,13 @@ span {
   border: 1px solid black;
   background-color: transparent;
 }
+
+.single-game-button:hover,
+.single-game-button:focus {
+  background-color: #c9c0de;
+}
+
+/* Media queries for responsiveness */
 
 @media (min-width: 768px) {
   .rules-container {
