@@ -143,9 +143,38 @@ ol {
   align-items: center;
 }
 
+span {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
 .hra-content-container {
   display: flex;
   justify-content: space-between;
+  width: 17rem;
+}
+
+.hra-buttons {
+  display: flex;
+}
+
+.game-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 17rem;
+  outline: 1px solid black;
+  background-image: linear-gradient(#c5b6d8, #f4d7e6);
+  background-repeat: no-repeat;
+}
+
+.single-game-button {
+  height: 1.7rem;
+  width: 1.7rem;
+  border: 1px solid black;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
