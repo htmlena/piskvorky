@@ -237,10 +237,36 @@ span {
 
 .field-circle {
   background-image: url('img/circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  animation-name: gradual-growth;
+  animation-duration: 0.15s;
 }
 
-..field-cross {
+.field-cross {
   background-image: url('img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  animation-name: gradual-growth;
+  animation-duration: 0.15s;
+}
+
+.active-player {
+  filter: invert(100);
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.1em;
+}
+
+@keyframes gradual-growth {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 60%;
+  }
 }
 
 /* Media queries for responsiveness */
