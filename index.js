@@ -8,12 +8,12 @@ gameButtonElm.addEventListener('click', (event) => {
 
   if (whoseTurn === 'circle') {
     pressedButton.classList.add('field-circle');
-    activePlayerElm.src = 'img/circle.svg';
+    activePlayerElm.src = 'img/cross.svg';
     pressedButton.disabled = true;
     whoseTurn = 'cross';
   } else if (whoseTurn === 'cross') {
     pressedButton.classList.add('field-cross');
-    activePlayerElm.src = 'img/cross.svg';
+    activePlayerElm.src = 'img/circle.svg';
     pressedButton.disabled = true;
     whoseTurn = 'circle';
   }
