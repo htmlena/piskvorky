@@ -233,6 +233,16 @@ span {
   background-color: #c9c0de;
 }
 
+/* Circle & cross on the game page styles */
+
+.field-circle {
+  background-image: url('img/circle.svg');
+}
+
+..field-cross {
+  background-image: url('img/cross.svg');
+}
+
 /* Media queries for responsiveness */
 
 @media (min-width: 768px) {
